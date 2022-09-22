@@ -272,5 +272,28 @@ JAVASCRIPTS
 <script src="./assets/js/vendor/popper.min.js" type="text/javascript"></script>
 <script src="./assets/js/vendor/bootstrap.min.js" type="text/javascript"></script>
 <script src="./assets/js/functions.js" type="text/javascript"></script>
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+	import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-analytics.js";
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	const firebaseConfig = {
+	  apiKey: "AIzaSyBW86GF-S7FUUeC4rbkrZTZ170Wvh9JxJU",
+	  authDomain: "el-rincon-de-lucas.firebaseapp.com",
+	  projectId: "el-rincon-de-lucas",
+	  storageBucket: "el-rincon-de-lucas.appspot.com",
+	  messagingSenderId: "882532441290",
+	  appId: "1:882532441290:web:e21ed5a9d63d7056a4e833",
+	  measurementId: "G-LLF5CLHKDN"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
